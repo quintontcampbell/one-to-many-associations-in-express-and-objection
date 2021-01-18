@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace one-to-many-associations-in-express-and-objection-client build",
+    "dev": "yarn workspace one-to-many-associations-in-express-and-objection-server dev",
+    "dev:debug": "yarn workspace one-to-many-associations-in-express-and-objection-server dev:debug",
+    "heroku-postbuild": "yarn workspace one-to-many-associations-in-express-and-objection-client build",
+    "start": "yarn workspace one-to-many-associations-in-express-and-objection-server start"
+  },
+  "engines": {
+    "node": "^14.15"
+  }
+}
